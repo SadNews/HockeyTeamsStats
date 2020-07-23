@@ -26,8 +26,8 @@ class PlayersListInteractor {
 
 extension PlayersListInteractor: PlayersListInteractorProtocol {
     func fetchPlayers() {
-        NetworkManager.shared.playersDataParse(from: teamId) { [weak self] roster in
-            self?.presenter.playersDidReceive(roster)
+        let url = "https://statsapi.web.nhl.com/api/v1/teams/\(teamId)/roster"
+        NetworkManager.shared.fetchGenericJSONData(urlString: url) { [weak self] (roster: PlayersData) in            self?.presenter.playersDidReceive(roster.roster)
         }
     }
 }

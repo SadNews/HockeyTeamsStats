@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct StatsParse: Decodable {
+struct TeamsStats: Decodable {
     var records: [Records]?
 }
 

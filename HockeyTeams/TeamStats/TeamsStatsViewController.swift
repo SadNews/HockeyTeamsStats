@@ -13,8 +13,7 @@ protocol TeamsStatsViewProtocol: class {
     func alert(Message: String)
     func refreshControlSetup()
 }
-
-class TeamsStatsViewController: UIViewController {
+final class TeamsStatsViewController: UIViewController {
     var refreshControl = UIRefreshControl()
     var presenter: TeamsStatsPresenterProtocol!
     private let configurator: TeamsStatsConfiguratorProtocol = TeamsStatsConfigurator()

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PlayersInfoViewController: UITableViewController {
+final class PlayersInfoViewController: UITableViewController {
     
     private var roster: [Roster]?
     
@@ -19,13 +19,7 @@ class PlayersInfoViewController: UITableViewController {
         super.viewDidLoad()
         tableView.allowsSelection = false
         self.startLoading()
-        NetworkManager.shared.playersDataParse(from: teamID) { value in
-            DispatchQueue.main.async {
-                self.roster = value
-                self.tableView.reloadData()
-                self.stopLoading()
-            }
-        }
+
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

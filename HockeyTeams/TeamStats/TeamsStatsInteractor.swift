@@ -9,16 +9,15 @@
 import Foundation
 
 protocol TeamsStatsInteractorProtocol: class{
-    func fetchTeams()
     func fetchStats()
 }
 
 protocol TeamsStatsInteractorOutputProtocol: class {
-    func teamsDidReceive(_ teams: [Teams])
     func teamsStatsDidReceive(_ stats: [Records])
 }
 
 class TeamsStatsInteractor {
+    
     weak var presenter: TeamsStatsInteractorOutputProtocol!
     
     required init(presenter: TeamsStatsInteractorOutputProtocol) {
@@ -27,15 +26,11 @@ class TeamsStatsInteractor {
 }
 
 extension TeamsStatsInteractor: TeamsStatsInteractorProtocol {
-    func fetchTeams() {
-        NetworkManager.shared.teamsDataParse { [weak self] teams in
-            self?.presenter.teamsDidReceive(teams)
-        }
-    }
     
-    func fetchStats() {
-        NetworkManager.shared.stateParse { [weak self] stats in
-            self?.presenter.teamsStatsDidReceive(stats)
+    func fetchStats()  {
+        let url = "https://statsapi.web.nhl.com/api/v1/standings"
+        NetworkManager.shared.fetchGenericJSONData(urlString: url) { [weak self] (stats: TeamsStats) in
+            self?.presenter.teamsStatsDidReceive(stats.records!)
         }
     }
 }

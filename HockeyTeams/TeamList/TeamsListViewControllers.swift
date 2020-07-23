@@ -13,7 +13,7 @@ protocol TeamsListViewProtocol: class {
     func reloadData()
 }
 
-class TeamsListViewController: UIViewController {
+final class TeamsListViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     

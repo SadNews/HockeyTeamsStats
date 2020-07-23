@@ -23,8 +23,8 @@ class TeamsListRouter {
 
 extension TeamsListRouter: TeamsListRouterProtocol {
     func openTeamsDetailViewController(with team: Teams){
-        viewController.performSegue(
-            withIdentifier: viewController.selfToTeamsDetailsSegueName,
-            sender: team)
+//        viewController.performSegue(
+//            withIdentifier: viewController.selfToTeamsDetailsSegueName,
+//            sender: team)
     }
 }

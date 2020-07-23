@@ -62,9 +62,7 @@ extension TeamsStatsPresenter: TeamsStatsPresenterProtocol {
     func viewDidLoad() {
         if !CheckInternet.Connection(){
             view.alert(Message: "No internet connection")
-        }else {
-            interactor.fetchTeams()
-            
+        }else {            
             interactor.fetchStats()
         }
     }

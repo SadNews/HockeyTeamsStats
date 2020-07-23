@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ShowDetailsViewController: UIViewController {
+final class ShowDetailsViewController: UIViewController {
     
     @IBOutlet weak var teamLogo: UIImageView!
     @IBOutlet weak var teamName: UILabel!

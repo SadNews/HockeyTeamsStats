@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TeamsData: Decodable{
+struct TeamsData: Decodable {
     var teams: [Teams]
 }
 

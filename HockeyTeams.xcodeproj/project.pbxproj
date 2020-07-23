@@ -13,7 +13,7 @@
 		1122EBC824688FF400346F73 /* TeamsStatsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122EBC724688FF400346F73 /* TeamsStatsInteractor.swift */; };
 		1122EBCA2468900B00346F73 /* TeamsStatsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122EBC92468900B00346F73 /* TeamsStatsRouter.swift */; };
 		1122EBCC2468901A00346F73 /* TeamsStatConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122EBCB2468901A00346F73 /* TeamsStatConfigurator.swift */; };
-		114C5044246DD66E0039263D /* StatsParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C5043246DD66E0039263D /* StatsParse.swift */; };
+		114C5044246DD66E0039263D /* TeamsStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C5043246DD66E0039263D /* TeamsStats.swift */; };
 		114C5046246DD69A0039263D /* StatsCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C5045246DD69A0039263D /* StatsCustomTableViewCell.swift */; };
 		114C5070246DDBFF0039263D /* CustomMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C506F246DDBFF0039263D /* CustomMainTableViewCell.swift */; };
 		114C5077246DE0B60039263D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114C5076246DE0B60039263D /* Main.storyboard */; };
@@ -48,7 +48,7 @@
 		1122EBC724688FF400346F73 /* TeamsStatsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsStatsInteractor.swift; sourceTree = "<group>"; };
 		1122EBC92468900B00346F73 /* TeamsStatsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsStatsRouter.swift; sourceTree = "<group>"; };
 		1122EBCB2468901A00346F73 /* TeamsStatConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsStatConfigurator.swift; sourceTree = "<group>"; };
-		114C5043246DD66E0039263D /* StatsParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsParse.swift; sourceTree = "<group>"; };
+		114C5043246DD66E0039263D /* TeamsStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsStats.swift; sourceTree = "<group>"; };
 		114C5045246DD69A0039263D /* StatsCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCustomTableViewCell.swift; sourceTree = "<group>"; };
 		114C506F246DDBFF0039263D /* CustomMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainTableViewCell.swift; sourceTree = "<group>"; };
 		114C5076246DE0B60039263D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 			children = (
 				8444515D23F79507005B6C76 /* Teams.swift */,
 				84EE1362240B8186005AAA20 /* Players.swift */,
-				114C5043246DD66E0039263D /* StatsParse.swift */,
+				114C5043246DD66E0039263D /* TeamsStats.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -344,7 +344,7 @@
 			files = (
 				844228BE23F767A200CA0615 /* AppDelegate.swift in Sources */,
 				1122EBC824688FF400346F73 /* TeamsStatsInteractor.swift in Sources */,
-				114C5044246DD66E0039263D /* StatsParse.swift in Sources */,
+				114C5044246DD66E0039263D /* TeamsStats.swift in Sources */,
 				1122EBCA2468900B00346F73 /* TeamsStatsRouter.swift in Sources */,
 				842350E12410A61B00AA7468 /* NetworkManager.swift in Sources */,
 				1122EBC424688FD000346F73 /* TeamsStatsViewController.swift in Sources */,

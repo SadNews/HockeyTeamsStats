@@ -12,7 +12,7 @@ protocol PlayersListViewProtocol: class {
     func reloadData()
 }
 
-class PlayersListViewController: UIViewController {
+final class PlayersListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var presenter: PlayersListPresenterProtocol!

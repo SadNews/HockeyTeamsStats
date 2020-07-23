@@ -26,8 +26,9 @@ class TeamsListInteractor {
 
 extension TeamsListInteractor: TeamsListInteractorProtocol {
     func fetchTeams() {
-        NetworkManager.shared.teamsDataParse { [weak self] teams in
-            self?.presenter.teamsDidReceive(teams)
+        let url = "https://statsapi.web.nhl.com/api/v1/teams"
+        NetworkManager.shared.fetchGenericJSONData(urlString: url) { [weak self] (teams: TeamsData) in
+            self?.presenter.teamsDidReceive(teams.teams)
         }
     }
 }
